@@ -11,6 +11,8 @@ Summary: Data templating language — C/C++ library, headers, and CLI
 
 Development: https://github.com/google/jsonnet
 
+Documentation: https://jsonnet.org/
+
 Jsonnet is a data templating language for app and tool developers. It
 generates configuration data in JSON, YAML, or any text-based format,
 with computed expressions, parameters, conditionals, arrays, objects,
