@@ -10,7 +10,7 @@ source:
   sha256: 5914b9904d97efa662d919519cef1a14e4132bfddddaeed8b061b4a8af628f8d
 
 build:
-  number: 0
+  number: 1
   skip:
     - win
   script: build.sh
@@ -53,6 +53,7 @@ about:
   license: Apache-2.0
   license_file: LICENSE
   repository: https://github.com/google/jsonnet
+  documentation: https://jsonnet.org/
 
 extra:
   recipe-maintainers:
