@@ -8,9 +8,13 @@ package:
 source:
   url: https://github.com/google/jsonnet/archive/refs/tags/v${{ version }}.tar.gz
   sha256: 5914b9904d97efa662d919519cef1a14e4132bfddddaeed8b061b4a8af628f8d
+  patches:
+    # Pack std.jsonnet at configure time when cross-compiling, instead of
+    # running the target-architecture to_c_array helper on the build machine.
+    - cross-compile-stdlib.patch
 
 build:
-  number: 1
+  number: 2
   skip:
     - win
   script: build.sh
